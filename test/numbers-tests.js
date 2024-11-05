@@ -154,20 +154,20 @@ describe('core-js-numbers', () => {
   );
 
   it.optional('isPrime should return true if specified number is prime', () => {
-    assert.equal(tasks.isPrime(2), true, 'number 2 is prime');
-    assert.equal(tasks.isPrime(3), true, 'number 3 is prime');
-    assert.equal(tasks.isPrime(4), false, '4 is not a prime number');
-    assert.equal(tasks.isPrime(5), true, 'number 5 is prime');
-    assert.equal(tasks.isPrime(6), false, '6 is not a prime number');
-    assert.equal(tasks.isPrime(7), true, 'number 7 is prime');
-    assert.equal(tasks.isPrime(8), false, '8 is not a prime number');
-    assert.equal(tasks.isPrime(9), false, '9 is not a prime number');
-    assert.equal(tasks.isPrime(10), false, '10 is not a prime number');
-    assert.equal(tasks.isPrime(11), true, 'number 11 is prime');
-    assert.equal(tasks.isPrime(12), false, '12 is not a prime number');
-    assert.equal(tasks.isPrime(13), true, 'number 13 is prime');
-    assert.equal(tasks.isPrime(113), true, 'number 113 is prime');
-    assert.equal(tasks.isPrime(119), false, '119 is not a prime number');
+    assert.equal(tasks.isPrime(), true, 'number 2 is prime');
+    assert.equal(tasks.isPrime(), true, 'number 3 is prime');
+    assert.equal(tasks.isPrime(), false, '4 is not a prime number');
+    assert.equal(tasks.isPrime(), true, 'number 5 is prime');
+    assert.equal(tasks.isPrime(), false, '6 is not a prime number');
+    assert.equal(tasks.isPrime(), true, 'number 7 is prime');
+    assert.equal(tasks.isPrime(), false, '8 is not a prime number');
+    assert.equal(tasks.isPrime(), false, '9 is not a prime number');
+    assert.equal(tasks.isPrime(), false, '10 is not a prime number');
+    assert.equal(tasks.isPrime(), true, 'number 11 is prime');
+    assert.equal(tasks.isPrime(), false, '12 is not a prime number');
+    assert.equal(tasks.isPrime(), true, 'number 13 is prime');
+    assert.equal(tasks.isPrime(), true, 'number 113 is prime');
+    assert.equal(tasks.isPrime(), false, '119 is not a prime number');
     assert.equal(
       forbidden.isCommented(tasks.isPrime),
       false,
