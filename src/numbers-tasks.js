@@ -654,16 +654,15 @@ function getCountOfOddNumbers(number) {
   let count = 0;
   if (number >= 0) {
     for (let i = 1; i <= number; i += 2) {
-      count++;
+      count += 1;
+    }
+  } else {
+    for (let i = -1; i >= number; i -= 2) {
+      count += 1;
     }
   }
-  else {
-    for (let i = -1; i >= number; i -= 2) {
-      count++;
-    }
-    return count;
+  return count;
 }
-
 module.exports = {
   getRectangleArea,
   getCircleCircumference,
